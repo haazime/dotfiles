@@ -1,0 +1,20 @@
+# terminal
+export CLICOLOR=1
+export LSCOLORS="GxFxCxDxBxegedabagaced"
+
+# aliases
+alias ll='ls -l'
+
+# share history
+shopt -u histappend
+share_history(){
+  history -a
+  history -c
+  history -r
+}
+PROMPT_COMMAND='share_history'
+
+# git helpers
+source ~/scripts/git-completion.bash
+source ~/scripts/git-prompt.sh
+export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
