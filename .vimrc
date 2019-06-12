@@ -18,6 +18,7 @@ Plugin 'tmhedberg/matchit'
 Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'rking/ag.vim'
+Plugin 'slim-template/vim-slim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
